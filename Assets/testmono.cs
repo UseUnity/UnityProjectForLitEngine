@@ -61,7 +61,7 @@ public class testmono : MonoBehaviour {
         //string testurl = "http://dldir1.qq.com/qqfile/qq/TIM2.0.0/22317/TIM2.0.0.exe";
          string testurl = "https://sm.myapp.com/original/game/tencent-SYZS-_1.0.847.123.exe";
         //  LitEngine.DownLoad.DownLoadTask.DownLoadFileAsync(AppCore.App["testapp"].GManager.UpdateList, testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
-        AppCore.App["testapp"].DownLoadFileAsync(testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
+       // AppCore.App["testapp"].DownLoadFileAsync(testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
         //PublicUpdateManager.DownLoadFileAsync("testapp", testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
 
         //解压缩测试
