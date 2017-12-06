@@ -1,0 +1,28 @@
+ManifestFileVersion: 0
+CRC: 4033839043
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: handfbx.fbx.bytes
+      Dependencies: {}
+    Info_1:
+      Name: handmat.mat.bytes
+      Dependencies:
+        Dependency_0: texture_loading_01.png.bytes
+    Info_2:
+      Name: handpfb.prefab.bytes
+      Dependencies:
+        Dependency_0: handfbx.fbx.bytes
+        Dependency_1: handmat.mat.bytes
+        Dependency_2: testhand.controller.bytes
+    Info_3:
+      Name: testhand.controller.bytes
+      Dependencies:
+        Dependency_0: handfbx.fbx.bytes
+    Info_4:
+      Name: texture_loading_01.png.bytes
+      Dependencies: {}
+    Info_5:
+      Name: exscene.unity.bytes
+      Dependencies:
+        Dependency_0: handpfb.prefab.bytes

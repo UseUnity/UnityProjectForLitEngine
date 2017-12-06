@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3013287352
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: aba14fe2dca23ad0019f46b01d5375dd
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c1642440719609290a7e09a50a7286f4
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/NeedExportResources/Model/Texture_Loading_01.png
+Dependencies: []
