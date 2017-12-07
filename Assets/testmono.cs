@@ -6,6 +6,10 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Text;
 using UnityEngine.Networking;
+using System.Net;
+using System.Net.Sockets;
+using System.Threading;
+using LitEngine.NetTool;
 public class testmono : MonoBehaviour {
 
     List<object> mList = new List<object>();
@@ -241,6 +245,41 @@ public class testmono : MonoBehaviour {
        
      
 
+    }
+
+
+    Socket mTestSocket = null;
+    private void OnGUI()
+    {
+        if(GUI.Button(new Rect(0,0,100,50),"连接"))
+        {
+            TCPNet.Instance.InitSocket("127.0.0.1", 10033, TcpCall);
+            TCPNet.Instance.ConnectToServer();
+            LitEngine.NetTool.BufferBase.IsHDate = false;
+        }
+
+        if (GUI.Button(new Rect(0, 100, 100, 50), "发送"))
+        {
+            LoginRsp trsp = new LoginRsp();
+            trsp.OpenID = "33445ddff4333";
+            trsp.result = 2;
+            trsp.UserID = 9527;
+
+            SendData tdata = new SendData(10086);
+            tdata.AddBytes(trsp.GetBytes());
+            TCPNet.Instance.AddSend(tdata);
+        }
+    }
+
+    private void TcpCall(MSG_RECALL_DATA _ms)
+    {
+        DLog.Log(_ms.mMsg);
+    }
+   
+
+    private void OnDestroy()
+    {
+        
     }
 }
 
