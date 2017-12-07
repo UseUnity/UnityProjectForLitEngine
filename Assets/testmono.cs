@@ -10,6 +10,8 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using LitEngine.NetTool;
+using LitEngine.IO;
+using System.IO;
 public class testmono : MonoBehaviour {
 
     List<object> mList = new List<object>();
@@ -65,7 +67,7 @@ public class testmono : MonoBehaviour {
         //string testurl = "http://dldir1.qq.com/qqfile/qq/TIM2.0.0/22317/TIM2.0.0.exe";
          string testurl = "https://sm.myapp.com/original/game/tencent-SYZS-_1.0.847.123.exe";
         //  LitEngine.DownLoad.DownLoadTask.DownLoadFileAsync(AppCore.App["testapp"].GManager.UpdateList, testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
-       // AppCore.App["testapp"].DownLoadFileAsync(testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
+        // AppCore.App["testapp"].DownLoadFileAsync(testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
         //PublicUpdateManager.DownLoadFileAsync("testapp", testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
 
         //解压缩测试
@@ -81,7 +83,44 @@ public class testmono : MonoBehaviour {
 
         //异步
         // StartCoroutine(UnzipTest());
+
+        // 加密解密测试
+        //string testencryptfile = "F:\\GitWorker\\GitHub\\UnityProjectForLitEngine\\TestAesFile.txt";
+        /* 
+         FileStream tfile = File.Create(testencryptfile);
+         BinaryWriter twriter = new BinaryWriter(tfile);
+         twriter.Write("测试字符串文字.");
+         twriter.Write(333);
+         twriter.Write(4.33f);
+         twriter.Write("测试字符串文字结束.");
+         twriter.Close();
+         tfile.Dispose();
+
+         LitEngine.IO.AesStreamBase.EnCryptFile(testencryptfile);
+         
+
+
+        LitEngine.IO.AESReader treadddd = new LitEngine.IO.AESReader(testencryptfile);
+          string tt = treadddd.ReadString();
+          int t2 = treadddd.ReadInt32();
+          float t3 = treadddd.ReadSingle();
+          string t4 = treadddd.ReadString();*/
+
+        // LitEngine.IO.AesStreamBase.EnCryptFile(testencryptfile);
+        //LitEngine.IO.AesStreamBase.DeCryptFile(testencryptfile);
+
+
+        /*
+        string teststrencry = "这是一个测试字符串.";
+        byte[] tencrybytes =  LitEngine.IO.AesStreamBase.Encrypt(Encoding.UTF8.GetBytes(teststrencry));
+
+        byte[] tdecrybytes = LitEngine.IO.AesStreamBase.Decrypt(tencrybytes);
+        string teststrdecryed = Encoding.UTF8.GetString(tdecrybytes);
+
+        if (teststrencry.Equals(teststrdecryed))
+            DLog.Log("解密bytes测试.");*/
     }
+
 
     void testHttpSendCall(string _key,byte[] _data)
     {
