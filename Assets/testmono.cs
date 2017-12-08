@@ -85,8 +85,8 @@ public class testmono : MonoBehaviour {
         // StartCoroutine(UnzipTest());
 
         // 加密解密测试
-        //string testencryptfile = "F:\\GitWorker\\GitHub\\UnityProjectForLitEngine\\TestAesFile.txt";
-        /* 
+       /* string testencryptfile = "F:\\GitWorker\\GitHub\\UnityProjectForLitEngine\\TestAesFile.txt";
+        
          FileStream tfile = File.Create(testencryptfile);
          BinaryWriter twriter = new BinaryWriter(tfile);
          twriter.Write("测试字符串文字.");
@@ -104,8 +104,8 @@ public class testmono : MonoBehaviour {
           string tt = treadddd.ReadString();
           int t2 = treadddd.ReadInt32();
           float t3 = treadddd.ReadSingle();
-          string t4 = treadddd.ReadString();*/
-
+          string t4 = treadddd.ReadString();
+          */
         // LitEngine.IO.AesStreamBase.EnCryptFile(testencryptfile);
         //LitEngine.IO.AesStreamBase.DeCryptFile(testencryptfile);
 
@@ -286,15 +286,25 @@ public class testmono : MonoBehaviour {
 
     }
 
-
-    Socket mTestSocket = null;
+    void MsgCallRec(LitEngine.NetTool.ReceiveData _data)
+    {
+        LoginRsp trsp = new LoginRsp();
+        trsp.MergeFrom(_data.Data);
+        DLog.Log(_data.Len + "|" + _data.Cmd + "|" + trsp.OpenID);
+        DLog.Log(trsp.result.ToString());
+        DLog.Log(trsp.UserID.ToString());
+    }
+    
     private void OnGUI()
     {
         if(GUI.Button(new Rect(0,0,100,50),"连接"))
         {
+           // LitEngine.NetTool.BufferBase.IsHDate = false;
+            TCPNet.Instance.IsShowDebugLog = true;
             TCPNet.Instance.InitSocket("127.0.0.1", 10033, TcpCall);
+            TCPNet.Instance.Reg(10086, MsgCallRec);
             TCPNet.Instance.ConnectToServer();
-            LitEngine.NetTool.BufferBase.IsHDate = false;
+           
         }
 
         if (GUI.Button(new Rect(0, 100, 100, 50), "发送"))
