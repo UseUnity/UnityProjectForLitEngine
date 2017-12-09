@@ -3,7 +3,7 @@ CRC: 3078778195
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: a6f9966e5c3b3c6aa3448fa1fa6d9876
+    Hash: 8d28d071f64896d351957cc637b438a7
   TypeTreeHash:
     serializedVersion: 2
     Hash: 0a9c3d214d6e2cd55e94d312b753b3a1
@@ -16,4 +16,4 @@ ClassTypes:
 Assets:
 - Assets/NeedExportResources/Model/testhand.controller
 Dependencies:
-- F:/GitWorker/UnityLitEngine/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/handfbx.fbx.bytes
+- F:/GitWorker/GitHub/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/handfbx.fbx.bytes

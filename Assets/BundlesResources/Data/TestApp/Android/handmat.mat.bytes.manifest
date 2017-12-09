@@ -3,7 +3,7 @@ CRC: 3140997149
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: cf7b3dcefc844a5271937ff1668d44d0
+    Hash: 91fc89e91d368ce112d45d7a34d18c75
   TypeTreeHash:
     serializedVersion: 2
     Hash: 0b04a37228feb7b9c312fb0cfbaa19c4
@@ -18,4 +18,4 @@ ClassTypes:
 Assets:
 - Assets/NeedExportResources/Model/Handmat.mat
 Dependencies:
-- F:/GitWorker/UnityLitEngine/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/texture_loading_01.png.bytes
+- F:/GitWorker/GitHub/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/texture_loading_01.png.bytes

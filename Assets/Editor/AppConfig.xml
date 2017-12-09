@@ -1,5 +1,5 @@
 ﻿<root>
-  <App AppName ="TestApp" BuildAssetBundleOptions="256">
+  <App AppName ="TestApp" BuildAssetBundleOptions="UncompressedAssetBundle">
     <DefaultExportPath>Assets/BundlesResources/Data/</DefaultExportPath>
     <NeedExportPath>Assets/NeedExportResources/</NeedExportPath>
     <EditorBundlePath>Assets/../Data/</EditorBundlePath>

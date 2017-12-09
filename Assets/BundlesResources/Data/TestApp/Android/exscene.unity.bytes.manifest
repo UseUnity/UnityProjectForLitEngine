@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2689527879
+CRC: 3766926073
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: aa941e6623cdf69fc5e52dcc722784d7
+    Hash: 69aeb099dd44264ac4c0f439ef8f5343
   TypeTreeHash:
     serializedVersion: 2
     Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
@@ -12,4 +12,4 @@ ClassTypes: []
 Assets:
 - Assets/NeedExportResources/Scene/exscene.unity
 Dependencies:
-- F:/GitWorker/UnityLitEngine/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/handpfb.prefab.bytes
+- F:/GitWorker/GitHub/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/handpfb.prefab.bytes

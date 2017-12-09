@@ -3,7 +3,7 @@ CRC: 724980936
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6d41637627aad27afbf553436e3f6409
+    Hash: 3e2f65a3781cba0e72fd39ba6f95cc28
   TypeTreeHash:
     serializedVersion: 2
     Hash: daedd1bdc42b6fadb71a3ac432427a36
@@ -28,6 +28,6 @@ ClassTypes:
 Assets:
 - Assets/NeedExportResources/Model/Handpfb.prefab
 Dependencies:
-- F:/GitWorker/UnityLitEngine/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/handfbx.fbx.bytes
-- F:/GitWorker/UnityLitEngine/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/handmat.mat.bytes
-- F:/GitWorker/UnityLitEngine/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/testhand.controller.bytes
+- F:/GitWorker/GitHub/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/handfbx.fbx.bytes
+- F:/GitWorker/GitHub/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/handmat.mat.bytes
+- F:/GitWorker/GitHub/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/testhand.controller.bytes
