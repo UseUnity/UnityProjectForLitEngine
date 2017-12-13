@@ -12,3 +12,10 @@ F:\GitWorker\UnityLitEngine\UnityProjectForLitEngine\testapp2\testapp2\obj\Relea
 F:\GitWorker\UnityLitEngine\UnityProjectForLitEngine\testapp2\testapp2\bin\Release\testapp2.dll
 F:\GitWorker\UnityLitEngine\UnityProjectForLitEngine\testapp2\testapp2\bin\Release\testapp2.pdb
 F:\GitWorker\UnityLitEngine\UnityProjectForLitEngine\testapp2\testapp2\bin\Release\LitEngine.dll
+F:\GitWorker\GitHub\UnityProjectForLitEngine\testapp2\testapp2\bin\Release\testapp2.dll
+F:\GitWorker\GitHub\UnityProjectForLitEngine\testapp2\testapp2\bin\Release\testapp2.pdb
+F:\GitWorker\GitHub\UnityProjectForLitEngine\testapp2\testapp2\bin\Release\LitEngine.dll
+F:\GitWorker\GitHub\UnityProjectForLitEngine\testapp2\testapp2\obj\Release\testapp2.csprojResolveAssemblyReference.cache
+F:\GitWorker\GitHub\UnityProjectForLitEngine\testapp2\testapp2\obj\Release\testapp2.csproj.CoreCompileInputs.cache
+F:\GitWorker\GitHub\UnityProjectForLitEngine\testapp2\testapp2\obj\Release\testapp2.dll
+F:\GitWorker\GitHub\UnityProjectForLitEngine\testapp2\testapp2\obj\Release\testapp2.pdb

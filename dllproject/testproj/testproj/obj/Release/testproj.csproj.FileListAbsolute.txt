@@ -14,3 +14,11 @@ F:\GitWorker\UnityLitEngine\UnityProjectForLitEngine\dllproject\testproj\testpro
 F:\GitWorker\UnityLitEngine\UnityProjectForLitEngine\dllproject\testproj\testproj\obj\Release\testproj.csproj.CoreCompileInputs.cache
 F:\GitWorker\UnityLitEngine\UnityProjectForLitEngine\dllproject\testproj\testproj\obj\Release\testproj.dll
 F:\GitWorker\UnityLitEngine\UnityProjectForLitEngine\dllproject\testproj\testproj\obj\Release\testproj.pdb
+F:\GitWorker\GitHub\UnityProjectForLitEngine\dllproject\testproj\testproj\bin\Release\testproj.dll
+F:\GitWorker\GitHub\UnityProjectForLitEngine\dllproject\testproj\testproj\bin\Release\testproj.pdb
+F:\GitWorker\GitHub\UnityProjectForLitEngine\dllproject\testproj\testproj\bin\Release\LitEngine.dll
+F:\GitWorker\GitHub\UnityProjectForLitEngine\dllproject\testproj\testproj\bin\Release\UnityEngine.dll
+F:\GitWorker\GitHub\UnityProjectForLitEngine\dllproject\testproj\testproj\obj\Release\testproj.csprojResolveAssemblyReference.cache
+F:\GitWorker\GitHub\UnityProjectForLitEngine\dllproject\testproj\testproj\obj\Release\testproj.csproj.CoreCompileInputs.cache
+F:\GitWorker\GitHub\UnityProjectForLitEngine\dllproject\testproj\testproj\obj\Release\testproj.dll
+F:\GitWorker\GitHub\UnityProjectForLitEngine\dllproject\testproj\testproj\obj\Release\testproj.pdb

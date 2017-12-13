@@ -91,9 +91,9 @@ public class TestB
 
     }
 
-    protected void  Update(float dt)
+    protected void  Update()
     {
-        // DLog.Log("Update--"+ dt);
+
     }
 
     protected void OnDisable()
