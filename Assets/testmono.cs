@@ -17,8 +17,9 @@ public class testmono : MonoBehaviour {
     List<object> mList = new List<object>();
     object ttestobj2;
     // Use this for initialization
+
     unsafe void Awake () {
-        
+
         LogToFile.InitLogCallback();//日志输出
         DLog.LOGColor(DLogType.Error, "testlog", LogColor.YELLO);
 
@@ -57,6 +58,15 @@ public class testmono : MonoBehaviour {
         string testhttpurl = "https://www.baidu.com/";
         LitEngine.NetTool.HttpNet.Send("testapp", testhttpurl, "testkey", testHttpSendCall);
 
+        System.Text.StringBuilder tformatbuilder = new System.Text.StringBuilder();
+        for (int i = 0; i < 2; i++)
+        {
+            tformatbuilder.Append("{");
+            tformatbuilder.Append(i);
+            tformatbuilder.Append("}/");
+        }
+
+        string tsssss = string.Format(tformatbuilder.ToString(),1,2);
 
         //下载测试  https://sm.myapp.com/original/game/tencent-SYZS-_1.0.847.123.exe
         //string testurl = "http://dldir1.qq.com/qqfile/qq/TIM2.0.0/22317/TIM2.0.0.exe";
@@ -80,37 +90,37 @@ public class testmono : MonoBehaviour {
         // StartCoroutine(UnzipTest());
 
         // 加密解密测试
-          /* string testencryptfile = "F:\\GitWorker\\GitHub\\UnityProjectForLitEngine\\TestAesFile.txt";
+        //string testencryptfile = "F:\\GitWorker\\GitHub\\UnityProjectForLitEngine\\TestAesFile.txt";
 
-            //存储测试文件
-             FileStream tfile = File.Create(testencryptfile);
-             BinaryWriter twriter = new BinaryWriter(tfile);
-             twriter.Write("测试字符串文字.");
-             twriter.Write(333);
-             twriter.Write(4.33f);
-             twriter.Write("测试字符串文字结束.");
-             twriter.Close();
-             tfile.Dispose();
+        /*  //存储测试文件
+           FileStream tfile = File.Create(testencryptfile);
+           BinaryWriter twriter = new BinaryWriter(tfile);
+           twriter.Write("测试字符串文字.");
+           twriter.Write(333);
+           twriter.Write(4.33f);
+           twriter.Write("测试字符串文字结束.");
+           twriter.Close();
+           tfile.Dispose();
 
-            //加密
-             LitEngine.IO.AesStreamBase.EnCryptFile(testencryptfile);
+          //加密
+           LitEngine.IO.AesStreamBase.EnCryptFile(testencryptfile);
 
-            //解密
-            LitEngine.IO.AESReader treadddd = new LitEngine.IO.AESReader(testencryptfile);
+          //解密
+          LitEngine.IO.AESReader treadddd = new LitEngine.IO.AESReader(testencryptfile);
 
-            //是否是加密文件
-            if (treadddd.IsEncrypt)
-            {
-                File.WriteAllBytes("F:\\GitWorker\\GitHub\\UnityProjectForLitEngine\\TestAesFile11.txt", treadddd.ReadAllBytes());
-            }
-            treadddd.Dispose();
+          //是否是加密文件
+          if (treadddd.IsEncrypt)
+          {
+              File.WriteAllBytes("F:\\GitWorker\\GitHub\\UnityProjectForLitEngine\\TestAesFile11.txt", treadddd.ReadAllBytes());
+          }
+          treadddd.Dispose();
 
-           treadddd = new LitEngine.IO.AESReader(testencryptfile);
-        string testread = treadddd.ReadString();
-        int ta= treadddd.ReadInt32();
-        float tf = treadddd.ReadSingle();
-        string te = treadddd.ReadString();
-        */
+         treadddd = new LitEngine.IO.AESReader(testencryptfile);
+      string testread = treadddd.ReadString();
+      int ta= treadddd.ReadInt32();
+      float tf = treadddd.ReadSingle();
+      string te = treadddd.ReadString();
+      */
         //  LitEngine.IO.AESReader treadddd = new LitEngine.IO.AESReader(testencryptfile);
         // string tt = treadddd.ReadString();
         //int t2 = treadddd.ReadInt32();
@@ -133,8 +143,9 @@ public class testmono : MonoBehaviour {
     }
 
 
-    void testHttpSendCall(string _key,byte[] _data)
+    void testHttpSendCall(string _key,string _error,byte[] _data)
     {
+        DLog.Log(_error);
         DLog.Log(_key + "|" + System.Text.Encoding.UTF8.GetString(_data));
     }
 

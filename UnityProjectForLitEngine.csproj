@@ -92,6 +92,7 @@
   <ItemGroup>
     <None Include="Assets\DeskShader.shader" />
     <None Include="Assets\Editor\AppConfig.xml" />
+    <None Include="Assets\Editor\ExCfg.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
