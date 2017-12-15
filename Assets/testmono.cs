@@ -189,12 +189,12 @@ public class testmono : MonoBehaviour {
     {
 
         //异步载入测试 通过  //2次异步资源计数加载释放测试
-        // AppCore.App["testapp"].LManager.LoadAssetAsync("test", "handpfb.prefab", TestCallBack);
+         //AppCore.App["testapp"].LManager.LoadAssetAsync("test", "handpfb.prefab", TestCallBack);
         // AppCore.App["testapp"].LManager.LoadAssetAsync("test", "handpfb.prefab", TestCallBack);
 
         //2次同步载入释放测试
-        Object ttestload = AppCore.App["testapp"].LManager.LoadAsset("handpfb.prefab");
-        GameObject.Instantiate(ttestload);
+       Object ttestload = AppCore.App["testapp"].LManager.LoadAsset("handpfb.prefab");
+       GameObject.Instantiate(ttestload);
         // Object ttestload2 = AppCore.App["testapp"].LManager.LoadAsset("handpfb.prefab");
         // GameObject.Instantiate(ttestload2);
         //release测试 通过
@@ -223,7 +223,7 @@ public class testmono : MonoBehaviour {
         DLog.Log( _key +"|"+res);
         GameObject.Instantiate((Object)res);
 
-      /*  
+      /*
         testcount++;
         if(testcount == 2)//2次异步资源计数释放测试
         {
