@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\TestUI.cs" />
     <Compile Include="Assets\Testmono1.cs" />
     <Compile Include="Assets\Testproto\TestProtofile.cs" />
     <Compile Include="Assets\testmono.cs" />

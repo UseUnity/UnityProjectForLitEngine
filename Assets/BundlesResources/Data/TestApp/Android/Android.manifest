@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 643405542
+CRC: 237019110
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -26,3 +26,30 @@ AssetBundleManifest:
       Name: exscene.unity.bytes
       Dependencies:
         Dependency_0: handpfb.prefab.bytes
+    Info_6:
+      Name: button 1.controller.bytes
+      Dependencies:
+        Dependency_0: normal.anim.bytes
+        Dependency_1: t1.anim.bytes
+        Dependency_2: testui.anim.bytes
+    Info_7:
+      Name: button.controller.bytes
+      Dependencies:
+        Dependency_0: testui.anim.bytes
+    Info_8:
+      Name: canvas.prefab.bytes
+      Dependencies:
+        Dependency_0: button 1.controller.bytes
+        Dependency_1: sichuan_1bing_1_1.ogg.bytes
+    Info_9:
+      Name: normal.anim.bytes
+      Dependencies: {}
+    Info_10:
+      Name: sichuan_1bing_1_1.ogg.bytes
+      Dependencies: {}
+    Info_11:
+      Name: t1.anim.bytes
+      Dependencies: {}
+    Info_12:
+      Name: testui.anim.bytes
+      Dependencies: {}
