@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 1851364738
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c8fc3b0d954335c17515b118b377d64c
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0a9c3d214d6e2cd55e94d312b753b3a1
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+Assets:
+- Assets/NeedExportResources/UI/Button 1.controller
+Dependencies:
+- F:/GitWorker/GitHub/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/normal.anim.bytes
+- F:/GitWorker/GitHub/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/t1.anim.bytes
+- F:/GitWorker/GitHub/UnityProjectForLitEngine/Assets/BundlesResources/Data/TestApp/Android/testui.anim.bytes

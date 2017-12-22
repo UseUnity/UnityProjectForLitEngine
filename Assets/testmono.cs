@@ -10,8 +10,12 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using LitEngine.NetTool;
+using UnityEngine.Events;
+using UnityEngine.UI;
 using LitEngine.IO;
 using System.IO;
+
+
 public class testmono : MonoBehaviour {
 
     List<object> mList = new List<object>();
@@ -20,6 +24,8 @@ public class testmono : MonoBehaviour {
 
     unsafe void Awake () {
 
+
+        
         LogToFile.InitLogCallback();//日志输出
         DLog.LOGColor(DLogType.Error, "testlog", LogColor.YELLO);
 
@@ -67,7 +73,7 @@ public class testmono : MonoBehaviour {
         }
 
         string tsssss = string.Format(tformatbuilder.ToString(),1,2);
-
+        
         //下载测试  https://sm.myapp.com/original/game/tencent-SYZS-_1.0.847.123.exe
         //string testurl = "http://dldir1.qq.com/qqfile/qq/TIM2.0.0/22317/TIM2.0.0.exe";
         // string testurl = "https://sm.myapp.com/original/game/tencent-SYZS-_1.0.847.123.exe";

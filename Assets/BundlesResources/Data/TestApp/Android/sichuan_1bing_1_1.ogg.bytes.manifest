@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 4095901796
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 4a0050e50ed6b8927a493952df4132cb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/NeedExportResources/UI/sichuan_1bing_1_1.ogg
+Dependencies: []
