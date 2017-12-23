@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using LitEngine;
 using LitEngine.ScriptInterface;
 using System.Collections.Generic;
@@ -13,8 +14,13 @@ public class TestA
         m = "测试字符串";
         mList = new List<float>();
     }
-   
-   
+
+    public void tttlog(int _dd)
+    {
+        DLog.LogError("测试unityaction|"+ _dd);
+    }
+
+
     public void log()
     {
         DLog.Log("测试输出函数调用:mindex = " + mindex+"  m = "+m);
