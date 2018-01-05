@@ -15,7 +15,6 @@ using UnityEngine.UI;
 using LitEngine.IO;
 using System.IO;
 
-
 public class testmono : MonoBehaviour {
 
     List<object> mList = new List<object>();
@@ -24,15 +23,20 @@ public class testmono : MonoBehaviour {
 
     unsafe void Awake () {
 
-
         
+
         LogToFile.InitLogCallback();//日志输出
         DLog.LOGColor(DLogType.Error, "testlog", LogColor.YELLO);
+
+       // AppCore.sUseScriptType = UseScriptType.UseScriptType_LS;
 
         string tapppath = System.IO.Directory.GetCurrentDirectory() + "\\";
         //初始化 APP1
         string tpath = tapppath + "dllproject/testproj/testproj/bin/Release/testproj";
-        AppCore.CreatGameCore("MainApp").SManager.LoadProject(tpath);//主app加载dll文件
+
+       AppCore.CreatGameCore("MainApp").SManager.LoadProject(tpath);//主app加载dll文件
+
+  
 
         //初始化app2
         string tpathapp2 = tapppath+"testapp2/testapp2/bin/Release/testapp2";
@@ -43,7 +47,7 @@ public class testmono : MonoBehaviour {
         object tobj = AppCore.App["testapp"].SManager.CodeTool.GetCSLEObjectParmas("TestApp2");
         System.Type ttypedd = tobj.GetType();
      
-        DLog.Log(tobj.GetType());
+        DLog.Log(tobj);
         AppCore.App["testapp"].SManager.CodeTool.CallMethodByName("testCall", tobj);
 
 
@@ -64,22 +68,13 @@ public class testmono : MonoBehaviour {
         string testhttpurl = "https://www.baidu.com/";
         LitEngine.NetTool.HttpNet.Send("testapp", testhttpurl, "testkey", testHttpSendCall);
 
-        System.Text.StringBuilder tformatbuilder = new System.Text.StringBuilder();
-        for (int i = 0; i < 2; i++)
-        {
-            tformatbuilder.Append("{");
-            tformatbuilder.Append(i);
-            tformatbuilder.Append("}/");
-        }
-
-        string tsssss = string.Format(tformatbuilder.ToString(),1,2);
         
-        //下载测试  https://sm.myapp.com/original/game/tencent-SYZS-_1.0.847.123.exe
+       // 下载测试  https://sm.myapp.com/original/game/tencent-SYZS-_1.0.847.123.exe
         //string testurl = "http://dldir1.qq.com/qqfile/qq/TIM2.0.0/22317/TIM2.0.0.exe";
-        // string testurl = "https://sm.myapp.com/original/game/tencent-SYZS-_1.0.847.123.exe";
+         string testurl = "https://sm.myapp.com/original/game/tencent-SYZS-_1.0.847.123.exe";
         //  LitEngine.DownLoad.DownLoadTask.DownLoadFileAsync(AppCore.App["testapp"].GManager.UpdateList, testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
         // AppCore.App["testapp"].DownLoadFileAsync(testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
-        //PublicUpdateManager.DownLoadFileAsync("testapp", testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
+        PublicUpdateManager.DownLoadFileAsync("testapp", testurl, Application.dataPath + "/../", false, testdownloadFinished, testdownloadprogress);
 
         //解压缩测试
         //异步任务模式
@@ -350,7 +345,7 @@ public class testmono : MonoBehaviour {
 
     private void TcpCall(MSG_RECALL_DATA _ms)
     {
-        DLog.Log(_ms.mMsg);
+        DLog.Log(_ms.mCmd + "|" + _ms.mMsg);
     }
    
 

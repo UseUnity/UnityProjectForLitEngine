@@ -21,6 +21,11 @@ public class TestUI : MonoBehaviour {
         uiinter.SetActive(true);
     }
 
+    public void Customtest(string _state)
+    {
+        uiinter.PlayAnimation(_state);
+    }
+
     // Update is called once per frame
     void Update () {
 		
